@@ -7,13 +7,13 @@ In this lab, I ensured the security of the research team's system by checking an
 
 <h2>Languages and Commands Used</h2>
 
-- <b>Bash Shell Scripting</b> 
+- <b>Bash Shell </b> 
 - <b>ls</b>
 - <b>chmod</b>
 
 <h2>Environments Used </h2>
 
-- <b>Linux Server</b> (21H2)
+- <b>Linux Server</b> 
 
 <h2>Program walk-through:</h2>
 
