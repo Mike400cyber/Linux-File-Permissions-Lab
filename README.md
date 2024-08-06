@@ -13,7 +13,7 @@ In this lab, I ensured the security of the research team's system by checking an
 
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>Linux Server</b> (21H2)
 
 <h2>Program walk-through:</h2>
 
@@ -22,16 +22,25 @@ Check file and directory details: <br/>
 <img src="https://imgur.com/OxTW10y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <h2>ls command</h2>
-I used the ls -l command to generate a detailed listing of all files and directories within the "projects" directory. ls -la could also be used to include hidden files and displayed permissions, ownership, and other relevant details for each item. <br />
-
-The output showed one directory (drafts), and four other project files. The permissions were displayed as 10-character strings, representing the access levels for the user, group, and others.
+I used the ls -l command to generate a detailed listing of all files and directories within the "projects" directory. ls -la could also be used to include hidden files and displayed permissions, ownership, and other relevant details for each item. The output showed one directory (drafts), and four other project files. The permissions were displayed as 10-character strings, representing the access levels for the user, group, and others.
 <br />
-<br />
+<h2></h2>
+<p align="center">
+Change file permissions: "other" shouldn't have write access to any files <br/>
+<img src="https://imgur.com/QjUghzR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br /> 
 <p align="center">
 Change file permissions on a hidden file: .project_x.txt <br/>
 <img src="https://imgur.com/VZ8BItO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /> 
+<h2>chmod command</h2>
+First I managed file permissions within the "projects" directory to ensure security and proper authorization. I used the chmod command to modify the permissions of specific files and directories. For instance, I removed write permissions for the "other" category on the project_k.txt file. This action ensured that unauthorized users could not modify the file. <br />
+<br />
+Secondly, I identified .project_x.txt as a hidden file due to its name starting with a period (.). I then modified its permissions to tighten security. Using the chmod command:
 
+- I removed write permissions for the user with u-w.
+- I removed write permissions for the group with g-w.
+- I added read permissions for the group with g+r.
 <br />
 <p align="center">
 Change directory permissions: <br/>
