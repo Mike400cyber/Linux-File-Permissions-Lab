@@ -33,7 +33,7 @@ Change file permissions: "other" shouldn't have write access to any files <br/>
 Change file permissions on a hidden file: read-only permissions "group & user" for file .project_x.txt <br/>
 <img src="https://imgur.com/VZ8BItO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /> 
-<h2>chmod command</h2>
+<h2>chmod command (Change file permissions)</h2>
 First I managed file permissions within the "projects" directory to ensure security and proper authorization. I used the chmod command to modify the permissions of specific files and directories. For instance, I removed write permissions for the "other" category on the project_k.txt file. This action ensured that unauthorized users could not modify the file. <br />
 <br />
 Secondly, I identified .project_x.txt as a hidden file due to its name starting with a period (.). I then modified its permissions using the chmod command.
@@ -46,7 +46,7 @@ Using = for both "user" and "group" categories overwrites all previous permissio
 Change directory permissions: Remove "group" write permissions for the drafts directory<br/>
 <img src="https://imgur.com/cR0VnFM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-<h2>Chmod command:</h2>
+<h2>chmod command (Change directory permissions):</h2>
 <br />
 I used the ls -la command to examine the detailed permissions of files and directories, identifying that the group had write permissions in the "drafts" directory.
 I used the chmod command to remove write permissions from the group. The "researcher2" user already had access and write permissions so the chmod g-x drafts command was used to remove write permissions.
