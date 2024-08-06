@@ -1,4 +1,4 @@
-<h1>Linux File Permissions Lab</h1>
+<h1>Bash Shell: Managing Authorization Lab</h1>
 
 <h2>Description</h2>
 In this lab, I ensured the security of the research team's system by checking and updating file permissions within the projects directory on a Linux server. The goal was to align the permissions with the required authorization levels, thereby enhancing the overall security.
