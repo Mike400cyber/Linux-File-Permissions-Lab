@@ -21,6 +21,10 @@ In this lab, I ensured the security of the research team's system by checking an
 Check file and directory details: <br/>
 <img src="https://imgur.com/OxTW10y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
+<h2>ls command</h2>
+I used the ls -l command to generate a detailed listing of all files and directories within the "projects" directory. ls -la could also be used to include hidden files and displayed permissions, ownership, and other relevant details for each item. <br />
+
+The output showed one directory (drafts), and four other project files. The permissions were displayed as 10-character strings, representing the access levels for the user, group, and others.
 <br />
 Change file permissions on a hidden file: .project_x.txt <br/>
 <img src="https://imgur.com/VZ8BItO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
