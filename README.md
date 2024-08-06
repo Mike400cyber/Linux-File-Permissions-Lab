@@ -51,7 +51,8 @@ Change directory permissions: Remove "group" write permissions for the drafts di
 I used the ls -la command to examine the detailed permissions of files and directories, identifying that the group had write permissions in the "drafts" directory.
 I used the chmod command to remove write permissions from the group. The "researcher2" user already had access and write permissions so the chmod g-x drafts command was used to remove write permissions.
 <h2>Summary:</h2>
-In this project, I was tasked with updating file and directory permissions within the "projects" directory to align with my organization's security and authorization requirements.
+In this project, I was tasked with updating file and directory permissions within the "projects" directory to align with the organization's security and authorization requirements. I began by using the ls -l and ls -la command to perform a detailed audit of the current file and directory permissions. This step was crucial in assessing the existing permission settings and identifying where changes were needed.
+Based on the results, I used the chmod command to modify the permissions on multiple files and directories. This ensured access levels were appropriately set to enhance security while meeting the organization's authorization standards.
 </p>
 
 <!--
