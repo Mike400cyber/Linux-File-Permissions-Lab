@@ -46,7 +46,10 @@ Using = for both "user" and "group" categories overwrites all previous permissio
 Change directory permissions: Remove "group" write permissions for the drafts directory<br/>
 <img src="https://imgur.com/cR0VnFM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
+<h2>Chmod command:</h2>
 <br />
+I used the ls -la command to examine the detailed permissions of files and directories, identifying that the group had write permissions in the "drafts" directory.
+I used the chmod command to remove write permissions from the group. The "researcher2" user already had access and write permissions so the chmod g-x drafts command was used to remove write permissions.
 <h2>Summary:</h2>
 In this project, I was tasked with updating file and directory permissions within the "projects" directory to align with my organization's security and authorization requirements.
 </p>
