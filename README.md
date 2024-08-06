@@ -26,11 +26,14 @@ I used the ls -l command to generate a detailed listing of all files and directo
 
 The output showed one directory (drafts), and four other project files. The permissions were displayed as 10-character strings, representing the access levels for the user, group, and others.
 <br />
+<br />
+<p align="center">
 Change file permissions on a hidden file: .project_x.txt <br/>
 <img src="https://imgur.com/VZ8BItO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /> 
 
 <br />
+<p align="center">
 Change directory permissions: <br/>
 <img src="https://imgur.com/qUft8ok.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
