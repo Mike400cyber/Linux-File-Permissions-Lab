@@ -30,21 +30,21 @@ Change file permissions: "other" shouldn't have write access to any files <br/>
 <img src="https://imgur.com/QjUghzR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /> 
 <p align="center">
-Change file permissions on a hidden file: .project_x.txt <br/>
+Change file permissions on a hidden file: read-only permissions "group & user" for file .project_x.txt <br/>
 <img src="https://imgur.com/VZ8BItO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /> 
 <h2>chmod command</h2>
 First I managed file permissions within the "projects" directory to ensure security and proper authorization. I used the chmod command to modify the permissions of specific files and directories. For instance, I removed write permissions for the "other" category on the project_k.txt file. This action ensured that unauthorized users could not modify the file. <br />
 <br />
-Secondly, I identified .project_x.txt as a hidden file due to its name starting with a period (.). I then modified its permissions to tighten security. Using the chmod command:
-
-- I removed write permissions for the user with u-w.
-- I removed write permissions for the group with g-w.
-- I added read permissions for the group with g+r.
+Secondly, I identified .project_x.txt as a hidden file due to its name starting with a period (.). I then modified its permissions using the chmod command.
+I added read permissions for the group with g=r.
+I added read permissions for the user with u=r. 
+Using = for both "user" and "group" categories overwrites all previous permissions and executes read permissions only.
 <br />
+<h2></h2> 
 <p align="center">
-Change directory permissions: <br/>
-<img src="https://imgur.com/qUft8ok.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Change directory permissions: Remove "group" write permissions for the drafts directory<br/>
+<img src="https://imgur.com/cR0VnFM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <h2>Summary:</h2>
